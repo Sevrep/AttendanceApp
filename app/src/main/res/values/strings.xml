@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AttendanceApp</string>
+    <string name="fullname">Fullname</string>
+    <string name="employee_id">Employee ID</string>
+    <string name="employee_picture">Employee picture</string>
+    <string name="time_in">TIME IN</string>
+    <string name="time_out">TIME OUT</string>
+    <string name="out">OUT</string>
+
+    <string name="register">REGISTER</string>
+    <string name="login_projectsite_hint">Projectsite</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="login_name_hint">Name</string>
+    <string name="login_mobile_number_hint">Mobile Number</string>
+    <string name="daily_time_record">Daily Time Record</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="home">HOME</string>
+    <string name="details">Details</string>
+    <string name="submit">Submit</string>
+    <string name="others">Others:</string>
+    <string name="rmcipayslip_info">rmcipayslip.info</string>
+    <string name="enter_ip_address">Enter ip address</string>
+    <string name="today_is">Today is ...</string>
+    <string name="project">Project: ...</string>
+    <string name="oic">OIC: ...</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="hello_user">Hello User</string>
+    <string name="captured_photo">Captured Photo</string>
+    <string name="time_inout">TIME INOUT</string>
+    <string name="submit_attendance">Submit Attendance</string>
+    <string name="mark_absent"><u>Mark absent</u>.</string>
+    <string name="timecard">TIMECARD</string>
+</resources>

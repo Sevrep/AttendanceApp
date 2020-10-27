@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    android:orientation="vertical"
+    tools:context=".ViewAttendanceActivity">
+
+    <TextView
+        android:id="@+id/tv_view_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="LOGS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white" />
+
+    <ListView
+        android:id="@+id/lv_viewattendance_attendances"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/imageViewPhotoPath"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:contentDescription="@string/employee_picture"
+        android:src="@drawable/ic_person_outline_white_24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPhotoPathOut"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_toEndOf="@+id/imageViewPhotoPath"
+        android:layout_toRightOf="@+id/imageViewPhotoPath"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:contentDescription="@string/employee_picture"
+        android:src="@drawable/ic_person_outline_white_24dp" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageViewPhotoPathOut"
+        android:layout_toRightOf="@+id/imageViewPhotoPathOut"
+        android:layout_alignTop="@+id/imageViewPhotoPathOut"
+        android:text="Name:"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewIn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDate"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/imageViewPhotoPathOut"
+        android:layout_toRightOf="@+id/imageViewPhotoPathOut"
+        android:text="In: 00:00:00"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDate"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/textViewIn"
+        android:layout_toRightOf="@+id/textViewIn"
+        android:text="Out: 00:00:00"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/imageViewPhotoPathOut"
+        android:layout_toRightOf="@+id/imageViewPhotoPathOut"
+        android:text="Date: "
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageViewStatus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_cloud_done_black_24dp" />
+
+</RelativeLayout>

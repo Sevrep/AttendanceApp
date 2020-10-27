@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context=".RecyclerviewEmployee">
+    <!--android:background="@drawable/grad_bg"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_recyclerview_todayis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Today is ..."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/bt_rv_logout"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_recyclerview_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Project: ..."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_recyclerview_todayis" />
+
+            <TextView
+                android:id="@+id/tv_recyclerview_oic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OIC: ..."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_recyclerview_project" />
+
+            <Button
+                android:id="@+id/bt_rv_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/btn_bg"
+                android:drawableStart="@drawable/ic_exit_to_app_white_24dp"
+                android:drawableLeft="@drawable/ic_exit_to_app_white_24dp"
+                android:drawablePadding="4dp"
+                android:onClick="logout"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:text="Logout"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_recyclerview_todayis"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_recyclerview_todayis" />
+
+            <Button
+                android:id="@+id/bt_rv_logs"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/btn_bg"
+                android:drawableStart="@drawable/ic_event_note_white_24dp"
+                android:drawableLeft="@drawable/ic_event_note_white_24dp"
+                android:drawablePadding="4dp"
+                android:onClick="checkLogs"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:text="Logs"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_recyclerview_oic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_recyclerview_project" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test early in:" />
+
+                <EditText
+                    android:id="@+id/test_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="07:00:00 AM" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test late out:" />
+
+                <EditText
+                    android:id="@+id/test_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="06:30:00 PM" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="saveTime"
+                android:text="Save time" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_recyclerview_employeelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
